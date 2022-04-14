@@ -1,12 +1,12 @@
-# Ensimmäinen testi
+# First test
 
-Testailen miten markdown toimii.
+This is my test to find out how markdown works.
 
-## Lisätesti
+## More testing
 
-Tuleeko väliotsikko kuten kuuluisi?
+Is this text under a subheading?
 
-###  Koodia?
+###  Code or not?
 
 	#/bin/bash
 	echo "Hello World!"
