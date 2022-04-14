@@ -1,4 +1,4 @@
-#Ensimmäinen testi
+# Ensimmäinen testi
 
 Testailen miten markdown toimii.
 
@@ -6,7 +6,7 @@ Testailen miten markdown toimii.
 
 Tuleeko väliotsikko kuten kuuluisi?
 
-## Koodia?
+###  Koodia?
 
 	#/bin/bash
 	echo "Hello World!"
