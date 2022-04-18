@@ -2,7 +2,7 @@
 
 ## z) Lue ja tiivistä artikkeli muutamalla ranskalaisella viivalla. Tässä z-alakohdassa ei tarvitse siis tehdä testejä tietokoneella.
 
-### [Commonmark contributors: Markdown Reference](https://commonmark.org/help/) huomaa ainakin otsikot risuaidoilla, kappalejako tyhjällä rivillä, sisennys (tab) koodia, lista, linkki, kuva.
+### [Commonmark contributors: Markdown Reference](https://commonmark.org/help/) (huomaa ainakin otsikot risuaidoilla, kappalejako tyhjällä rivillä, sisennys (tab) koodia, lista, linkki, kuva.)
 
 - Markdown on yksinkertainen työkalu tekstin muokkaamiseen
 - Tekstiä voi muokata \*-merkeillä. \**kursivoi\** ja \*\***lihavoi***\*
@@ -23,4 +23,4 @@
 - Tavallisen listan voi muodostaa laittamalla tekstin eteen merkin `* tai -` 
 - Numeroidun listan voi muodostaa laittamalla tekstin eteen `1. tai 1)`
 - Linkki muodostuu seuraavasti: `[Linkin nimi](url-osoite)`
-- Kuvan saa lisättyä samaan tyyliin: `![Kuvan nimi](kuvan osoite)`
+- Kuvan saa lisättyä melkein samalla tavalla: `![Kuvan nimi](kuvan osoite)`
