@@ -6,8 +6,6 @@
 
 - Markdown on yksinkertainen työkalu tekstin muokkaamiseen
 - Tekstiä voi muokata \*-merkeillä. \**kursivoi\** ja \*\***lihavoi***\*
-- 	*Tämä teksti on kursivoitua*
-- 	**Tämä teksti on lihavoitua**
 - "#" tekstin edessä tekee siitä otsikon. Risuaitojen määrä kertoo otsikon tason (# - pääotsikko, ## - alaotsikko jne.)
 - Tyhjä rivi muodostaa tekstiin kappalejaon
 - Painamalla kerran tab-näppäintä saa tehtyä tekstiin sisennyksen. Sisennyksessä oleva teksti näytetään erillisenä "koodilohkona"
@@ -22,4 +20,7 @@
 	-rw-r--r--  1 santtu santtu    39 18. 4. 11:48 README.md
 	-rw-r--r--  1 santtu santtu   166 18. 4. 11:48 TESTI.md
 ```
-- Listoja voi muodostaa laittamalla tekstin eteen merkin * tai - 
+- Tavallisen listan voi muodostaa laittamalla tekstin eteen merkin `* tai -` 
+- Numeroidun listan voi muodostaa laittamalla tekstin eteen `1. tai 1)`
+- Linkki muodostuu seuraavasti: `[Linkin nimi](url-osoite)`
+- Kuvan saa lisättyä samaan tyyliin: `![Kuvan nimi](kuvan osoite)`
