@@ -11,7 +11,6 @@
 	-rw-r--r--  1 santtu santtu   166 18. 4. 11:48 TESTI.md
 	
 - Testataan listan alla
-
 ##
 	santtu@massina:~/palvelintenhallinta$ ls -la
 	total 44
