@@ -5,7 +5,7 @@
 ### [Commonmark contributors: Markdown Reference](https://commonmark.org/help/) huomaa ainakin otsikot risuaidoilla, kappalejako tyhjällä rivillä, sisennys (tab) koodia, lista, linkki, kuva.
 
 - Markdown on yksinkertainen työkalu tekstin muokkaamiseen
-- Tekstiä voi muokata \*-merkeillä. \*kursivoi\* ja \**lihavoi\**
+- Tekstiä voi muokata \*-merkeillä. \**kursivoi\** ja \**\**lihavoi\**\**
 - 	*Tämä teksti on kursivoitua*
 - 	**Tämä teksti on lihavoitua**
 - "#" tekstin edessä tekee siitä otsikon. Risuaitojen määrä kertoo otsikon tason (# - pääotsikko, ## - alaotsikko jne.)
