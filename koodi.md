@@ -12,6 +12,7 @@
 	
 - Testataan listan alla
 
+##
 	santtu@massina:~/palvelintenhallinta$ ls -la
 	total 44
 	drwxr-xr-x  3 santtu santtu  4096 18. 4. 11:53 .
