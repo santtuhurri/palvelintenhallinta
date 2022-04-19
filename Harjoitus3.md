@@ -65,7 +65,12 @@ Seuraavana näkyy rivinumero ja viimeisenä itse rivin sisältö. Tämän avulla
 
 ## c) Huppis! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.
 
+Tätä kohtaa varten kirjoitin tähän harjoitukseen tekstin "HUPS! Tein tähän tyhmän muutoksen, jota en halua viedä loppuun."
+Tallensin tiedoston normaalisti ja ajoin sen jälkeen komennon 'git reset --hard'. Tämän jälkeen sain ilmoituksen "HEAD is now at 5267f2d Add minor change".
+Ajettu komento oli siis poistanut tekemäni muutoksen ja palauttanut vanhemman version, jolle oli tehty commit.
 
+![screenshotOfStupidChange](Images/stupidchange.jpg)
+![screenshotOfReset](Images/gitreset.jpg)
 
 ## d) Formula. Tee uusi salt-tila (formula, moduli, infraa koodina). (Eli uusi tiedosto esim. /srv/salt/terontila/init.sls). Voit tehdä ihan yksinkertaisen parin funktion (pkg, file...) tilan, tai edistyneemmin asentaa ja konfiguroida minkä vain uuden ohjelman: demonin, työpöytäohjelman tai komentokehotteesta toimivan ohjelman. Käytä tarvittaessa ‘find -printf “%T+ %p\n”|sort’ löytääksesi uudet asetustiedostot.
 
