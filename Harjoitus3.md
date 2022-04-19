@@ -31,4 +31,4 @@ Tämän tehtävän raportti löytyy GitHubista: [Palvelinten hallinta -  Harjoit
 
 ## b) Pull first. Tee useita muutoksia git-varastoosi. Tee muutama muutos, jossa yksi commit koskee useampaa tiedostoa. Anna hyvä kuvaukset (commit message), yksi englanninkielinen lause imperatiivissa (määräysmuodossa) "Add top level menu to Foobar synchronizer"
 
-![screenshotOfCommits](h3.b1)
+![screenshotOfCommits](h3.b1.jpg)
