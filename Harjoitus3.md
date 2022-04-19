@@ -1,6 +1,7 @@
 # Harjoitus 3 - Versionhallinta
 
-Tämän tehtävän harjoitukset on tehty samalla kokoonpanolla kuin aiemmissakin harjoituksissa.
+Tämän tehtävän harjoitukset on tehty samalla kokoonpanolla kuin aiemmissakin [harjoituksissa.](https://hurrisanttu.wordpress.com/)
+##
 
 ## z) Lue ja tiivistä artikkeli muutamalla ranskalaisella viivalla. Tässä z-alakohdassa ei tarvitse siis tehdä testejä tietokoneella.
 
@@ -26,13 +27,11 @@ Tämän tehtävän harjoitukset on tehty samalla kokoonpanolla kuin aiemmissakin
 - Numeroidun listan voi muodostaa laittamalla tekstin eteen `1. tai 1)`
 - Linkin saa luotua seuraavasti: `[Linkin nimi](url-osoite)`
 - Kuvan saa lisättyä seuraavasti: `![Kuvan nimi](kuvan osoite)`
-
 ##
 
 ## a) MarkDown. Tee tämän tehtävän raportti MarkDownina. Helpointa on tehdä raportti GitHub-varastoon, jolloin md-päätteiset tiedostot muotoillaan automaattisesti. Tyhjä rivi tekee kappalejaon, risuaita ‘#’ tekee otsikon, sisennys merkitsee koodinpätkän.
 
 Tämän tehtävän raportti löytyy GitHubista: [Palvelinten hallinta - Harjoitus 3](https://github.com/santtuhurri/palvelintenhallinta/blob/main/Harjoitus3.md)
-
 ##
 
 ## b) Pull first. Tee useita muutoksia git-varastoosi. Tee muutama muutos, jossa yksi commit koskee useampaa tiedostoa. Anna hyvä kuvaukset (commit message), yksi englanninkielinen lause imperatiivissa (määräysmuodossa) "Add top level menu to Foobar synchronizer"
@@ -46,7 +45,6 @@ Lopulta tajusin, että yritin lisätä kuvaa, joka sijaitsi vain ja ainoastaan W
 Siirsin siis kuvan henkilökohtaisen pilven kautta Linux-virtuaalikoneelleni, loin GitHub arkistoni alle uuden "Images" nimisen kansion johon lisäsin kuvan ja sain sen onnistuneesti näkyviin.
 
 ![screenshotOfCommits](Images/gitcommit.jpg)
-
 ##
 
 ## b) Kaikki kirjataan. Näytä omalla git-varastollasi esimerkit komennoista ‘git log’, ‘git diff’ ja ‘git blame’. Selitä tulokset.
@@ -68,7 +66,6 @@ Se kertoo yksityiskohtaisesti tiedostoon tehdyt muutokset. Numero-kirjainyhdiste
 Seuraavana näkyy rivinumero ja viimeisenä itse rivin sisältö. Tämän avulla on helppo tarkistaa kuka on tehnyt tiedostoon muutoksia ja milloin.
 
 ![screenshotOfBlame](Images/gitblame.jpg)
-
 ##
 
 ## c) Huppis! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.
@@ -79,7 +76,6 @@ Ajettu komento oli siis poistanut tekemäni muutoksen ja palauttanut vanhemman v
 
 ![screenshotOfStupidChange](Images/stupidchange.jpg)
 ![screenshotOfReset](Images/gitreset.jpg)
-
 ##
 
 ## d) Formula. Tee uusi salt-tila (formula, moduli, infraa koodina). (Eli uusi tiedosto esim. /srv/salt/terontila/init.sls). Voit tehdä ihan yksinkertaisen parin funktion (pkg, file...) tilan, tai edistyneemmin asentaa ja konfiguroida minkä vain uuden ohjelman: demonin, työpöytäohjelman tai komentokehotteesta toimivan ohjelman. Käytä tarvittaessa ‘find -printf “%T+ %p\n”|sort’ löytääksesi uudet asetustiedostot.
@@ -118,14 +114,13 @@ Muokkasin vielä  `init.sls` tiedostoa seuraavasti:
 ```
 Nyt kaikilla käyttäjillä on oikeudet muokata tiedostoa ja testasin tätä ajamalla tilan uudestaan sekä onnistuneesti muokkaamalla tiedostoa.
 
-Kokeilin myös tulosten hakemista herra-koneelta komennolla `sudo salt '*' cmd.run 'cat /usr/games/tulokset.txt'`. Vastauksesi sain muokatun tiedoston, nyt muokattu salt-tila toimi täysin halutulla tavalla.
-
+Kokeilin myös tulosten hakemista herra-koneelta komennolla `sudo salt '*' cmd.run 'cat /usr/games/tulokset.txt'`. Vastauksesi sain muokatun tiedoston, eli  muokattu salt-tila toimi täysin halutulla tavalla.
 ##
 
 ## Lähteet
 
-Karvinen, Tero. Oppitunnit 2022-04-14, Configuration management systems 2022. [https://terokarvinen.com/2021/configuration-management-systems-2022-spring/](https://terokarvinen.com/2021/configuration-management-systems-2022-spring/)
-
 Atlassian.com. Git Status: Inspecting a repository. [https://www.atlassian.com/git/tutorials/inspecting-a-repository](https://www.atlassian.com/git/tutorials/inspecting-a-repository)
 
 GitHub.com. can file.directory recurse chmod? (updated) #3471. [https://github.com/saltstack/salt/issues/3471](https://github.com/saltstack/salt/issues/3471)
+
+Karvinen, Tero. Oppitunnit 2022-04-14, Configuration management systems 2022. [https://terokarvinen.com/2021/configuration-management-systems-2022-spring/](https://terokarvinen.com/2021/configuration-management-systems-2022-spring/)
