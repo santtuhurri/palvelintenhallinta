@@ -45,6 +45,10 @@ Lopulta tajusin, että yritin lisätä kuvaa, joka sijaitsi vain ja ainoastaan W
 Siirsin siis kuvan henkilökohtaisen pilven kautta Linux-virtuaalikoneelleni, loin GitHub arkistoni alle uuden "Images" nimisen kansion johon lisäsin kuvan ja sain sen onnistuneesti näkyviin.
 
 ![screenshotOfCommits](Images/gitcommit.jpg)
+
+Annoin myös käyttämilleni screenshoteille fiksummat nimet.
+
+![screenshotOfImages](Images/images.jpg)
 ##
 
 ## b) Kaikki kirjataan. Näytä omalla git-varastollasi esimerkit komennoista ‘git log’, ‘git diff’ ja ‘git blame’. Selitä tulokset.
