@@ -40,26 +40,26 @@ Tähän kohtaan halusin myös lisätä kuvan 'git commit' kohdasta ja kohtasin l
 Lopulta tajusin, että yritin lisätä kuvaa, joka sijaitsi vain ja ainoastaan Windows-pöytäkoneellani.
 Siirsin siis kuvan henkilökohtaisen pilven kautta Linux-virtuaalikoneelleni, loin GitHub arkistoni alle uuden "Images" nimisen kansion johon lisäsin kuvan ja sain sen onnistuneesti näkyviin.
 
-![screenshotOfCommits](Images/git commit.jpg)
+![screenshotOfCommits](Images/gitcommit.jpg)
 
 ## b) Kaikki kirjataan. Näytä omalla git-varastollasi esimerkit komennoista ‘git log’, ‘git diff’ ja ‘git blame’. Selitä tulokset.
 
 'git log' näyttää kaikki tehdyt muutokset. Ylhäällä lukee muutoksen commit-tunniste, tämän alapuolella muutoksen tekijän nimi sekä sähköposti.
 Sen jälkeen ilmoitetaan muutoksen ajankohta ja viimeisenä lukee vielä 'commit message' eli mitä muutos pitää sisällään.
 
-![screenshotOfLog](Images/git log.jpg)
+![screenshotOfLog](Images/gitlog.jpg)
 
 'git diff' näyttää kaikki eroavaisuudet versioiden välillä, kunnes käytetään komentoa 'git add .'.
 Aluksi ilmoitetaan mistä tiedostosta on kyse.
 Valkoinen teksti ei ole muuttunut, punainen teksti ja '-'-merkki kertovat poistetuista kohdista ja vihreä teksti sekä '+'-merkki kertovat lisätyistä kohdista.
 
-![screenshotOfDiff](Images/git diff.jpg)
+![screenshotOfDiff](Images/gitdiff.jpg)
 
 'git blame' toimii vain yksittäisen tiedoston kohdalla, esim. 'git blame TESTI.md'.
 Se kertoo yksityiskohtaisesti tiedostoon tehdyt muutokset. Numero-kirjainyhdistelmä on muutoksen id, sitä seuraa muutoksen tekijän nimi sekä muutoksen ajankohta.
 Seuraavana näkyy rivinumero ja viimeisenä itse rivin sisältö. Tämän avulla on helppo tarkistaa kuka on tehnyt tiedostoon muutoksia ja milloin.
 
-![screenshotOfBlame](Images/git blame.jpg)
+![screenshotOfBlame](Images/gitblame.jpg)
 
 ## c) Huppis! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.
 
