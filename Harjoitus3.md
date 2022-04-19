@@ -72,6 +72,7 @@ Seuraavana näkyy rivinumero ja viimeisenä itse rivin sisältö. Tämän avulla
 ##
 
 ## c) Huppis! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.
+
 Tätä kohtaa varten kirjoitin tähän harjoitukseen tekstin "HUPS! Tein tähän tyhmän muutoksen, jota en halua viedä loppuun."
 Tallensin tiedoston normaalisti ja ajoin sen jälkeen komennon 'git reset --hard'. Tämän jälkeen sain ilmoituksen "HEAD is now at 5267f2d Add minor change".
 Ajettu komento oli siis poistanut tekemäni muutoksen ja palauttanut vanhemman version, jolle oli tehty commit.
@@ -83,9 +84,49 @@ Ajettu komento oli siis poistanut tekemäni muutoksen ja palauttanut vanhemman v
 
 ## d) Formula. Tee uusi salt-tila (formula, moduli, infraa koodina). (Eli uusi tiedosto esim. /srv/salt/terontila/init.sls). Voit tehdä ihan yksinkertaisen parin funktion (pkg, file...) tilan, tai edistyneemmin asentaa ja konfiguroida minkä vain uuden ohjelman: demonin, työpöytäohjelman tai komentokehotteesta toimivan ohjelman. Käytä tarvittaessa ‘find -printf “%T+ %p\n”|sort’ löytääksesi uudet asetustiedostot.
 
+Aloitin asentamalla pelin bastet komennoilla `sudo apt-get update` ja `sudo apt-get install bastet`.
+Asennuksen jälkeen kokeilin pelin toimivaksi komennolla `bastet` ja tarkistin myös sen sijainnin komennolla `whereis bastet`, tuloksesi sain "bastet: /usr/games/bastet".
+Tämän jälkeen poistin pelin komennolla `sudo apt-get purge bastet`.
+
+Seuraavaksi siirryin kotihakemistooni ja loin sinne tiedostot `kilpailun_saannot.txt` ja `tulokset.txt`. Tarkoituksena oli siis asentaa orja-koneille peli nimeltä Bastet, luoda pelin kansioon kyseiset tiedostot, jotka kertovat kyseessä olevan leikkimielinen kilpailu palkintoineen, selostavat säännöt sekä mahdollistavat tulosten kirjaamisen.
+
+Näiden luomisen jälkeen siirryin kansioon `/srv/salt` ja loin uuden kansion `sudo mkdir bastet` ja sinne tiedoston `sudoedit init.sls`. Tiedostoon lisäsin seuraavat tekstit:
+```
+	bastet:
+	  pkg.installed
+	
+	/usr/games/kilpailun_saannot.txt:
+	  file.managed:
+    	- source: /home/santtu/kilpailun_saannot.txt
+	
+	/usr/games/tulokset.txt:
+	  file.managed:
+	    - source: /home/santtu/tulokset.txt
+```
+Tämän jälkeen oli aika kokeilla salt-tilaa komennolla `sudo salt '*' state.apply bastet`. Tulokseksi sain "Succeeded: 3(changed=3)", ajoin komennon uudestaan ja nyt tulos oli "Succeeded: 3". Tavoitetila oli siis saavutettu ja oli aika tarkistaa toimiiko peli sekä löytyvätkö tiedostot.
+
+![screenshotOfSaltstate](saltstate.jpg)
+
+Käynnistin pelin komennolla `bastet` ja pääsin pelaamaan. Siirryin kansioon `/usr/games` ja löysin aiemmin luomani tiedostot `kilpailun_saannot.txt` sekä `tulokset.txt`.
+Salt-tila toimi siis halutulla tavalla, mutta ongelmaksi muodostui `tulokset.txt` tiedoston muokkaaminen ilman oikeuksia.
+Muokkasin vielä  `init.sls` tiedostoa seuraavasti:
+```
+	/usr/games/tulokset.txt:
+	  file.managed:
+	    - source: /home/santtu/tulokset.txt
+	    - mode: 777
+```
+Nyt kaikilla käyttäjillä on oikeudet muokata tiedostoa ja testasin tätä ajamalla tilan uudestaan sekä onnistuneesti muokkaamalla tiedostoa.
+
+Kokeilin myös tulosten hakemista herra-koneelta komennolla `sudo salt '*' cmd.run 'cat /usr/games/tulokset.txt'`. Vastauksesi sain muokatun tiedoston, salt-tila toimi siis halutulla tavalla.
+
 ##
 
 ## Lähteet
 
 Karvinen, Tero. Oppitunnit 2022-04-14, Configuration management systems 2022. [https://terokarvinen.com/2021/configuration-management-systems-2022-spring/](https://terokarvinen.com/2021/configuration-management-systems-2022-spring/)
+
 Atlassian.com. Git Status: Inspecting a repository. [https://www.atlassian.com/git/tutorials/inspecting-a-repository](https://www.atlassian.com/git/tutorials/inspecting-a-repository)
+
+GitHub.com. can file.directory recurse chmod? (updated) #3471. [https://github.com/saltstack/salt/issues/3471](https://github.com/saltstack/salt/issues/3471)
+)]
