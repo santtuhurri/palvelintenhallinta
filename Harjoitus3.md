@@ -41,7 +41,7 @@ Aloitin muutosten tekemisen poistamalla koodi.md nimisen tiedoston, jota käytin
 Seuraavaksi muokkasin TESTI.md tiedostoa, jonka avulla kokeilin vielä aiemmin opittuja Markdownin ominaisuuksia, kuten fontin muokkaamista sekä numeroidun listan tekemistä.
 Lopuksi kirjoitin vielä päivityksiä Harjoitus3.md tiedostoon ja aloitin kirjoittamaan tätä osiota.
 
-Tähän kohtaan halusin myös lisätä kuvan 'git commit' kohdasta ja kohtasin lieviä vaikeuksia kuvan lisäämisessä. Apua hain [Stack Overflowsta](https://stackoverflow.com/questions/41604263/how-do-i-display-local-image-in-markdown) ja vaikka kaikki näytti olevan niin kuin pitää, ei kuva silti näkynyt GitHubissa.
+Tähän kohtaan halusin myös lisätä kuvan `git commit` kohdasta ja kohtasin lieviä vaikeuksia kuvan lisäämisessä. Apua hain [Stack Overflowsta](https://stackoverflow.com/questions/41604263/how-do-i-display-local-image-in-markdown) ja vaikka kaikki näytti olevan niin kuin pitää, ei kuva silti näkynyt GitHubissa.
 Lopulta tajusin, että yritin lisätä kuvaa, joka sijaitsi vain ja ainoastaan Windows-pöytäkoneellani.
 Siirsin siis kuvan henkilökohtaisen pilven kautta Linux-virtuaalikoneelleni, loin GitHub arkistoni alle uuden "Images" nimisen kansion johon lisäsin kuvan ja sain sen onnistuneesti näkyviin.
 
@@ -51,19 +51,19 @@ Siirsin siis kuvan henkilökohtaisen pilven kautta Linux-virtuaalikoneelleni, lo
 
 ## b) Kaikki kirjataan. Näytä omalla git-varastollasi esimerkit komennoista ‘git log’, ‘git diff’ ja ‘git blame’. Selitä tulokset.
 
-'git log' näyttää kaikki tehdyt muutokset, jotka on viety loppuun 'git commit' komennolla. Ylhäällä lukee muutoksen commit-tunniste, tämän alapuolella muutoksen tekijän nimi sekä sähköposti.
+`git log` näyttää kaikki tehdyt muutokset, jotka on viety loppuun `git commit` komennolla. Ylhäällä lukee muutoksen commit-tunniste, tämän alapuolella muutoksen tekijän nimi sekä sähköposti.
 Sen jälkeen ilmoitetaan muutoksen ajankohta ja viimeisenä lukee vielä 'commit message' eli muutoksen tekijän viesti, siitä mitä muutos pitää sisällään.
 Tästä lokitiedostosta käy hyvin ilmi ongelmat kuvan lisäämisen kanssa.
 
 ![screenshotOfLog](Images/gitlog.jpg)
 
-'git diff' näyttää kaikki eroavaisuudet versioiden välillä, kunnes käytetään komentoa 'git add .'.
+`git diff` näyttää kaikki eroavaisuudet versioiden välillä, kunnes käytetään komentoa `git add .`.
 Aluksi ilmoitetaan mistä tiedostosta on kyse ja '@@'-merkkien välissä olevat numerot kertovat mistä rivistä alkaen ja kuinka monta riviä muutos sisältää.
 Valkoinen teksti ei ole muuttunut, punainen teksti ja '-' -merkki kertovat poistetuista kohdista ja vihreä teksti sekä '+' -merkki kertovat lisätyistä kohdista.
 
 ![screenshotOfDiff](Images/gitdiff.jpg)
 
-'git blame' toimii vain yksittäisen tiedoston kohdalla, esim. 'git blame TESTI.md'.
+`git blame` toimii vain yksittäisen tiedoston kohdalla, esim. `git blame TESTI.md`.
 Se kertoo yksityiskohtaisesti tiedostoon tehdyt muutokset. Numero-kirjainyhdistelmä on muutoksen id, sitä seuraa muutoksen tekijän nimi sekä muutoksen ajankohta.
 Seuraavana näkyy rivinumero ja viimeisenä itse rivin sisältö. Tämän avulla on helppo tarkistaa kuka on tehnyt tiedostoon muutoksia ja milloin.
 
@@ -74,7 +74,7 @@ Seuraavana näkyy rivinumero ja viimeisenä itse rivin sisältö. Tämän avulla
 ## c) Huppis! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.
 
 Tätä kohtaa varten kirjoitin tähän harjoitukseen tekstin "HUPS! Tein tähän tyhmän muutoksen, jota en halua viedä loppuun."
-Tallensin tiedoston normaalisti ja ajoin sen jälkeen komennon 'git reset --hard'. Tämän jälkeen sain ilmoituksen "HEAD is now at 5267f2d Add minor change".
+Tallensin tiedoston normaalisti ja ajoin sen jälkeen komennon `git reset --hard`. Tämän jälkeen sain ilmoituksen "HEAD is now at 5267f2d Add minor change".
 Ajettu komento oli siis poistanut tekemäni muutoksen ja palauttanut vanhemman version, jolle oli tehty commit.
 
 ![screenshotOfStupidChange](Images/stupidchange.jpg)
@@ -97,7 +97,7 @@ Näiden luomisen jälkeen siirryin kansioon `/srv/salt` ja loin uuden kansion `s
 	
 	/usr/games/kilpailun_saannot.txt:
 	  file.managed:
-    	- source: /home/santtu/kilpailun_saannot.txt
+        - source: /home/santtu/kilpailun_saannot.txt
 	
 	/usr/games/tulokset.txt:
 	  file.managed:
@@ -105,7 +105,7 @@ Näiden luomisen jälkeen siirryin kansioon `/srv/salt` ja loin uuden kansion `s
 ```
 Tämän jälkeen oli aika kokeilla salt-tilaa komennolla `sudo salt '*' state.apply bastet`. Tulokseksi sain "Succeeded: 3(changed=3)", ajoin komennon uudestaan ja nyt tulos oli "Succeeded: 3". Tavoitetila oli siis saavutettu ja oli aika tarkistaa toimiiko peli sekä löytyvätkö tiedostot.
 
-![screenshotOfSaltstate](saltstate.jpg)
+![screenshotOfSaltstate](Images/saltstate.jpg)
 
 Käynnistin pelin komennolla `bastet` ja pääsin pelaamaan. Siirryin kansioon `/usr/games` ja löysin aiemmin luomani tiedostot `kilpailun_saannot.txt` sekä `tulokset.txt`.
 Salt-tila toimi siis halutulla tavalla, mutta ongelmaksi muodostui `tulokset.txt` tiedoston muokkaaminen ilman oikeuksia.
@@ -118,7 +118,7 @@ Muokkasin vielä  `init.sls` tiedostoa seuraavasti:
 ```
 Nyt kaikilla käyttäjillä on oikeudet muokata tiedostoa ja testasin tätä ajamalla tilan uudestaan sekä onnistuneesti muokkaamalla tiedostoa.
 
-Kokeilin myös tulosten hakemista herra-koneelta komennolla `sudo salt '*' cmd.run 'cat /usr/games/tulokset.txt'`. Vastauksesi sain muokatun tiedoston, salt-tila toimi siis halutulla tavalla.
+Kokeilin myös tulosten hakemista herra-koneelta komennolla `sudo salt '*' cmd.run 'cat /usr/games/tulokset.txt'`. Vastauksesi sain muokatun tiedoston, nyt muokattu salt-tila toimi täysin halutulla tavalla.
 
 ##
 
