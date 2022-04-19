@@ -48,7 +48,7 @@ Siirsin siis kuvan henkilökohtaisen pilven kautta Linux-virtuaalikoneelleni, lo
 
 Annoin myös käyttämilleni screenshoteille fiksummat nimet.
 
-![screenshotOfImages](Images/images.jpg)
+![screenshotOfImages](Images/imags.jpg)
 ##
 
 ## b) Kaikki kirjataan. Näytä omalla git-varastollasi esimerkit komennoista ‘git log’, ‘git diff’ ja ‘git blame’. Selitä tulokset.
