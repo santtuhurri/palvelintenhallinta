@@ -27,6 +27,8 @@ Tämän tehtävän harjoitukset on tehty samalla kokoonpanolla kuin aiemmissakin
 - Linkin saa luotua seuraavasti: `[Linkin nimi](url-osoite)`
 - Kuvan saa lisättyä seuraavasti: `![Kuvan nimi](kuvan osoite)`
 
+##
+
 ## a) MarkDown. Tee tämän tehtävän raportti MarkDownina. Helpointa on tehdä raportti GitHub-varastoon, jolloin md-päätteiset tiedostot muotoillaan automaattisesti. Tyhjä rivi tekee kappalejaon, risuaita ‘#’ tekee otsikon, sisennys merkitsee koodinpätkän.
 
 Tämän tehtävän raportti löytyy GitHubista: [Palvelinten hallinta - Harjoitus 3](https://github.com/santtuhurri/palvelintenhallinta/blob/main/Harjoitus3.md)
@@ -44,6 +46,8 @@ Lopulta tajusin, että yritin lisätä kuvaa, joka sijaitsi vain ja ainoastaan W
 Siirsin siis kuvan henkilökohtaisen pilven kautta Linux-virtuaalikoneelleni, loin GitHub arkistoni alle uuden "Images" nimisen kansion johon lisäsin kuvan ja sain sen onnistuneesti näkyviin.
 
 ![screenshotOfCommits](Images/gitcommit.jpg)
+
+##
 
 ## b) Kaikki kirjataan. Näytä omalla git-varastollasi esimerkit komennoista ‘git log’, ‘git diff’ ja ‘git blame’. Selitä tulokset.
 
@@ -65,6 +69,8 @@ Seuraavana näkyy rivinumero ja viimeisenä itse rivin sisältö. Tämän avulla
 
 ![screenshotOfBlame](Images/gitblame.jpg)
 
+##
+
 ## c) Huppis! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.
 
 Tätä kohtaa varten kirjoitin tähän harjoitukseen tekstin "HUPS! Tein tähän tyhmän muutoksen, jota en halua viedä loppuun."
@@ -74,7 +80,13 @@ Ajettu komento oli siis poistanut tekemäni muutoksen ja palauttanut vanhemman v
 ![screenshotOfStupidChange](Images/stupidchange.jpg)
 ![screenshotOfReset](Images/gitreset.jpg)
 
+##
+
 ## d) Formula. Tee uusi salt-tila (formula, moduli, infraa koodina). (Eli uusi tiedosto esim. /srv/salt/terontila/init.sls). Voit tehdä ihan yksinkertaisen parin funktion (pkg, file...) tilan, tai edistyneemmin asentaa ja konfiguroida minkä vain uuden ohjelman: demonin, työpöytäohjelman tai komentokehotteesta toimivan ohjelman. Käytä tarvittaessa ‘find -printf “%T+ %p\n”|sort’ löytääksesi uudet asetustiedostot.
 
+##
 
+## Lähteet
+
+Karvinen, Tero. Oppitunnit 2022-04-14, Configuration management systems 2022.[https://terokarvinen.com/2021/configuration-management-systems-2022-spring/](https://terokarvinen.com/2021/configuration-management-systems-2022-spring/)
 
