@@ -36,6 +36,7 @@ Tämän tehtävän raportti löytyy GitHubista: [Palvelinten hallinta - Harjoitu
 Aloitin muutosten tekemisen poistamalla koodi.md nimisen tiedoston, jota käytin apuna "koodilohkon" luomisessa, eikä se enää tässä vaiheessa ollut tarpeellinen.
 Seuraavaksi muokkasin TESTI.md tiedostoa, jonka avulla kokeilin vielä aiemmin opittuja Markdownin ominaisuuksia, kuten fontin muokkaamista sekä numeroidun listan tekemistä.
 Lopuksi kirjoitin vielä päivityksiä Harjoitus3.md tiedostoon ja aloitin kirjoittamaan tätä osiota.
+
 Tähän kohtaan halusin myös lisätä kuvan 'git commit' kohdasta ja kohtasin lieviä vaikeuksia kuvan lisäämisessä. Apua hain [Stack Overflowsta](https://stackoverflow.com/questions/41604263/how-do-i-display-local-image-in-markdown) ja vaikka kaikki näytti olevan niin kuin pitää, ei kuva silti näkynyt GitHubissa.
 Lopulta tajusin, että yritin lisätä kuvaa, joka sijaitsi vain ja ainoastaan Windows-pöytäkoneellani.
 Siirsin siis kuvan henkilökohtaisen pilven kautta Linux-virtuaalikoneelleni, loin GitHub arkistoni alle uuden "Images" nimisen kansion johon lisäsin kuvan ja sain sen onnistuneesti näkyviin.
@@ -44,14 +45,15 @@ Siirsin siis kuvan henkilökohtaisen pilven kautta Linux-virtuaalikoneelleni, lo
 
 ## b) Kaikki kirjataan. Näytä omalla git-varastollasi esimerkit komennoista ‘git log’, ‘git diff’ ja ‘git blame’. Selitä tulokset.
 
-'git log' näyttää kaikki tehdyt muutokset. Ylhäällä lukee muutoksen commit-tunniste, tämän alapuolella muutoksen tekijän nimi sekä sähköposti.
-Sen jälkeen ilmoitetaan muutoksen ajankohta ja viimeisenä lukee vielä 'commit message' eli mitä muutos pitää sisällään.
+'git log' näyttää kaikki tehdyt muutokset, jotka on viety loppuun 'git commit' komennolla. Ylhäällä lukee muutoksen commit-tunniste, tämän alapuolella muutoksen tekijän nimi sekä sähköposti.
+Sen jälkeen ilmoitetaan muutoksen ajankohta ja viimeisenä lukee vielä 'commit message' eli muutoksen tekijän viesti, siitä mitä muutos pitää sisällään.
+Tästä lokitiedostosta käy hyvin ilmi ongelmat kuvan lisäämisen kanssa.
 
 ![screenshotOfLog](Images/gitlog.jpg)
 
 'git diff' näyttää kaikki eroavaisuudet versioiden välillä, kunnes käytetään komentoa 'git add .'.
-Aluksi ilmoitetaan mistä tiedostosta on kyse.
-Valkoinen teksti ei ole muuttunut, punainen teksti ja '-'-merkki kertovat poistetuista kohdista ja vihreä teksti sekä '+'-merkki kertovat lisätyistä kohdista.
+Aluksi ilmoitetaan mistä tiedostosta on kyse ja '@@'-merkkien välissä olevat numerot kertovat mistä rivistä alkaen ja kuinka monta riviä muutos sisältää.
+Valkoinen teksti ei ole muuttunut, punainen teksti ja '-' -merkki kertovat poistetuista kohdista ja vihreä teksti sekä '+' -merkki kertovat lisätyistä kohdista.
 
 ![screenshotOfDiff](Images/gitdiff.jpg)
 
