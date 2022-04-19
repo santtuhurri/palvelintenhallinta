@@ -97,7 +97,7 @@ Näiden luomisen jälkeen siirryin kansioon `/srv/salt` ja loin uuden kansion `s
 	
 	/usr/games/kilpailun_saannot.txt:
 	  file.managed:
-        - source: /home/santtu/kilpailun_saannot.txt
+	    - source: /home/santtu/kilpailun_saannot.txt
 	
 	/usr/games/tulokset.txt:
 	  file.managed:
@@ -129,4 +129,3 @@ Karvinen, Tero. Oppitunnit 2022-04-14, Configuration management systems 2022. [h
 Atlassian.com. Git Status: Inspecting a repository. [https://www.atlassian.com/git/tutorials/inspecting-a-repository](https://www.atlassian.com/git/tutorials/inspecting-a-repository)
 
 GitHub.com. can file.directory recurse chmod? (updated) #3471. [https://github.com/saltstack/salt/issues/3471](https://github.com/saltstack/salt/issues/3471)
-)]
