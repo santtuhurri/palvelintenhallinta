@@ -31,6 +31,8 @@ Tämän tehtävän harjoitukset on tehty samalla kokoonpanolla kuin aiemmissakin
 
 Tämän tehtävän raportti löytyy GitHubista: [Palvelinten hallinta - Harjoitus 3](https://github.com/santtuhurri/palvelintenhallinta/blob/main/Harjoitus3.md)
 
+##
+
 ## b) Pull first. Tee useita muutoksia git-varastoosi. Tee muutama muutos, jossa yksi commit koskee useampaa tiedostoa. Anna hyvä kuvaukset (commit message), yksi englanninkielinen lause imperatiivissa (määräysmuodossa) "Add top level menu to Foobar synchronizer"
 
 Aloitin muutosten tekemisen poistamalla koodi.md nimisen tiedoston, jota käytin apuna "koodilohkon" luomisessa, eikä se enää tässä vaiheessa ollut tarpeellinen.
@@ -73,4 +75,6 @@ Ajettu komento oli siis poistanut tekemäni muutoksen ja palauttanut vanhemman v
 ![screenshotOfReset](Images/gitreset.jpg)
 
 ## d) Formula. Tee uusi salt-tila (formula, moduli, infraa koodina). (Eli uusi tiedosto esim. /srv/salt/terontila/init.sls). Voit tehdä ihan yksinkertaisen parin funktion (pkg, file...) tilan, tai edistyneemmin asentaa ja konfiguroida minkä vain uuden ohjelman: demonin, työpöytäohjelman tai komentokehotteesta toimivan ohjelman. Käytä tarvittaessa ‘find -printf “%T+ %p\n”|sort’ löytääksesi uudet asetustiedostot.
+
+
 
