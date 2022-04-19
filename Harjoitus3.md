@@ -1,4 +1,4 @@
-# Harjoitus 3 - Versionhallinta
+# Palvelinten hallinta - Harjoitus 3
 
 Tämän tehtävän harjoitukset on tehty samalla kokoonpanolla kuin aiemmissakin [harjoituksissa.](https://hurrisanttu.wordpress.com/)
 ##
