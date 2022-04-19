@@ -1,5 +1,7 @@
 # Harjoitus 3 - Versionhallinta
 
+Tämän tehtävän harjoitukset on tehty samalla kokoonpanolla kuin aiemmissakin harjoituksissa.
+
 ## z) Lue ja tiivistä artikkeli muutamalla ranskalaisella viivalla. Tässä z-alakohdassa ei tarvitse siis tehdä testejä tietokoneella.
 
 ### [Commonmark contributors: Markdown Reference](https://commonmark.org/help/) (huomaa ainakin otsikot risuaidoilla, kappalejako tyhjällä rivillä, sisennys (tab) koodia, lista, linkki, kuva.)
@@ -22,21 +24,42 @@
 ```
 - Tavallisen listan voi muodostaa laittamalla tekstin eteen merkin `* tai -` 
 - Numeroidun listan voi muodostaa laittamalla tekstin eteen `1. tai 1)`
-- Linkki muodostuu seuraavasti: `[Linkin nimi](url-osoite)`
-- Kuvan saa lisättyä melkein samalla tavalla: `![Kuvan nimi](kuvan osoite)`
-
+- Linkin saa luotua seuraavasti: `[Linkin nimi](url-osoite)`
+- Kuvan saa lisättyä seuraavasti: `![Kuvan nimi](kuvan osoite)`
 
 ## a) MarkDown. Tee tämän tehtävän raportti MarkDownina. Helpointa on tehdä raportti GitHub-varastoon, jolloin md-päätteiset tiedostot muotoillaan automaattisesti. Tyhjä rivi tekee kappalejaon, risuaita ‘#’ tekee otsikon, sisennys merkitsee koodinpätkän.
 
-Tämän tehtävän raportti löytyy GitHubista: [Palvelinten hallinta -  Harjoitus 3](https://github.com/santtuhurri/palvelintenhallinta/blob/main/Harjoitus3.md)
+Tämän tehtävän raportti löytyy GitHubista: [Palvelinten hallinta - Harjoitus 3](https://github.com/santtuhurri/palvelintenhallinta/blob/main/Harjoitus3.md)
 
 ## b) Pull first. Tee useita muutoksia git-varastoosi. Tee muutama muutos, jossa yksi commit koskee useampaa tiedostoa. Anna hyvä kuvaukset (commit message), yksi englanninkielinen lause imperatiivissa (määräysmuodossa) "Add top level menu to Foobar synchronizer"
 
-Aloitin muutosten tekemisen poistamalla koodi.md nimisen tiedoston, jota käytin apuna "koodilohkon" luomisessa.
+Aloitin muutosten tekemisen poistamalla koodi.md nimisen tiedoston, jota käytin apuna "koodilohkon" luomisessa, eikä se enää tässä vaiheessa ollut tarpeellinen.
+Seuraavaksi muokkasin TESTI.md tiedostoa, jonka avulla kokeilin vielä aiemmin opittuja Markdownin ominaisuuksia, kuten fontin muokkaamista sekä numeroidun listan tekemistä.
+Lopuksi kirjoitin vielä päivityksiä Harjoitus3.md tiedostoon ja aloitin kirjoittamaan tätä osiota.
+Tähän kohtaan halusin myös lisätä kuvan 'git commit' kohdasta ja kohtasin lieviä vaikeuksia kuvan lisäämisessä. Apua hain [Stack Overflowsta](https://stackoverflow.com/questions/41604263/how-do-i-display-local-image-in-markdown) ja vaikka kaikki näytti olevan niin kuin pitää, ei kuva silti näkynyt GitHubissa.
+Lopulta tajusin, että yritin lisätä kuvaa, joka sijaitsi vain ja ainoastaan Windows-pöytäkoneellani.
+Siirsin siis kuvan henkilökohtaisen pilven kautta Linux-virtuaalikoneelleni, loin GitHub arkistoni alle uuden "Images" nimisen kansion johon lisäsin kuvan ja sain sen onnistuneesti näkyviin.
 
-![screenshotOfCommits](Images/h3.b1.jpg)
+![screenshotOfCommits](Images/git commit.jpg)
 
 ## b) Kaikki kirjataan. Näytä omalla git-varastollasi esimerkit komennoista ‘git log’, ‘git diff’ ja ‘git blame’. Selitä tulokset.
+
+'git log' näyttää kaikki tehdyt muutokset. Ylhäällä lukee muutoksen commit-tunniste, tämän alapuolella muutoksen tekijän nimi sekä sähköposti.
+Sen jälkeen ilmoitetaan muutoksen ajankohta ja viimeisenä lukee vielä 'commit message' eli mitä muutos pitää sisällään.
+
+![screenshotOfLog](Images/git log.jpg)
+
+'git diff' näyttää kaikki eroavaisuudet versioiden välillä, kunnes käytetään komentoa 'git add .'.
+Aluksi ilmoitetaan mistä tiedostosta on kyse.
+Valkoinen teksti ei ole muuttunut, punainen teksti ja '-'-merkki kertovat poistetuista kohdista ja vihreä teksti sekä '+'-merkki kertovat lisätyistä kohdista.
+
+![screenshotOfDiff](Images/git diff.jpg)
+
+'git blame' toimii vain yksittäisen tiedoston kohdalla, esim. 'git blame TESTI.md'.
+Se kertoo yksityiskohtaisesti tiedostoon tehdyt muutokset. Numero-kirjainyhdistelmä on muutoksen id, sitä seuraa muutoksen tekijän nimi sekä muutoksen ajankohta.
+Seuraavana näkyy rivinumero ja viimeisenä itse rivin sisältö. Tämän avulla on helppo tarkistaa kuka on tehnyt tiedostoon muutoksia ja milloin.
+
+![screenshotOfBlame](Images/git blame.jpg)
 
 ## c) Huppis! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.
 
