@@ -75,7 +75,8 @@ Seuraavana näkyy rivinumero ja viimeisenä itse rivin sisältö. Tämän avulla
 ## c) Huppis! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.
 
 Tätä kohtaa varten kirjoitin tähän harjoitukseen tekstin "HUPS! Tein tähän tyhmän muutoksen, jota en halua viedä loppuun."
-Tallensin tiedoston normaalisti ja ajoin sen jälkeen komennon `git reset --hard`. Tämän jälkeen sain ilmoituksen "HEAD is now at 5267f2d Add minor change".
+Tallensin tiedoston normaalisti, käytin komentoa `git add .` sekä `git status`, joka näytti, että Harjoitus3.md odottaa committia.
+Lopuksi ajoin komennon `git reset --hard`. Ja sain ilmoituksen "HEAD is now at 5267f2d Add minor change".
 Ajettu komento oli siis poistanut tekemäni muutoksen ja palauttanut vanhemman version, jolle oli tehty commit.
 
 ![screenshotOfStupidChange](Images/stupidchange.jpg)
