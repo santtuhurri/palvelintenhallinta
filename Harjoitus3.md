@@ -80,7 +80,7 @@ Lopuksi ajoin komennon `git reset --hard`. Ja sain ilmoituksen "HEAD is now at 5
 Ajettu komento oli siis poistanut tekemäni muutoksen ja palauttanut vanhemman version, jolle oli tehty commit.
 
 ![screenshotOfStupidChange](Images/stupidchange.jpg)
-![screenshotOfReset](Images/gitreset2.jpg)
+![screenshotOfReset](Images/gitreset.jpg)
 ##
 
 ## d) Formula. Tee uusi salt-tila (formula, moduli, infraa koodina). (Eli uusi tiedosto esim. /srv/salt/terontila/init.sls). Voit tehdä ihan yksinkertaisen parin funktion (pkg, file...) tilan, tai edistyneemmin asentaa ja konfiguroida minkä vain uuden ohjelman: demonin, työpöytäohjelman tai komentokehotteesta toimivan ohjelman. Käytä tarvittaessa ‘find -printf “%T+ %p\n”|sort’ löytääksesi uudet asetustiedostot.
