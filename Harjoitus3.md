@@ -46,7 +46,7 @@ Siirsin siis kuvan henkilökohtaisen pilven kautta Linux-virtuaalikoneelleni, lo
 
 ![screenshotOfCommits](Images/gitcommit.jpg)
 
-Annoin myös käyttämilleni screenshoteille fiksummat nimet.
+Annoin myös käyttämilleni screenshoteille fiksummat nimet. Kuvien nimet on muokattu suoraan virtuaalikoneen Images-kansiossa.
 
 ![screenshotOfImages](Images/images.jpg)
 ##
