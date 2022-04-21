@@ -1,6 +1,6 @@
 # Palvelinten hallinta - Harjoitus 3
 
-Tämän tehtävän harjoitukset on tehty samalla kokoonpanolla kuin aiemmissakin [harjoituksissa.](https://hurrisanttu.wordpress.com/)
+Tämän tehtävän harjoitukset on tehty samalla kokoonpanolla kuin aiemmissakin [harjoituksissa.](https://hurrisanttu.wordpress.com/) (Update 21.4. Tehtävän tekstiä muokattu ja lisätty oikea kuva. Tehtävään lisätty käytettyjä komentoja, jotka unohtuneet alkuperäisestä tekstistä.)
 ##
 
 ## z) Lue ja tiivistä artikkeli muutamalla ranskalaisella viivalla. Tässä z-alakohdassa ei tarvitse siis tehdä testejä tietokoneella.
@@ -78,7 +78,7 @@ Seuraavana näkyy rivinumero ja viimeisenä itse rivin sisältö. Tämän avulla
 Tätä kohtaa varten kirjoitin tähän harjoitukseen tekstin "HUPS! Tein tähän tyhmän muutoksen, jota en halua viedä loppuun."
 Tallensin tiedoston normaalisti, käytin komentoa `git add .` sekä `git status`, joka näytti, että Harjoitus3.md odottaa committia.
 Lopuksi ajoin komennon `git reset --hard`. Ja sain ilmoituksen "HEAD is now at 5267f2d Add minor change".
-Ajettu komento oli siis poistanut tekemäni muutoksen ja palauttanut vanhemman version, jolle oli tehty commit.
+Ajettu komento oli siis poistanut tekemäni muutoksen ja palauttanut vanhemman version, jolle oli tehty commit. (Update 21.4. päivitin tekstiin komennot ja oikean kuvan.)
 
 ![screenshotOfStupidChange](Images/stupidchange.jpg)
 ![screenshotOfReset](Images/gitreset.jpg)
