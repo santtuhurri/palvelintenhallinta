@@ -118,7 +118,7 @@ Muokkasin vielä  `init.sls` tiedostoa seuraavasti:
 	    - source: /home/santtu/tulokset.txt
 	    - mode: 777
 ```
-Nyt kaikilla käyttäjillä on oikeudet muokata tiedostoa ja testasin tätä ajamalla tilan uudestaan sekä onnistuneesti muokkaamalla tiedostoa.
+Nyt kaikilla käyttäjillä on oikeudet muokata tiedostoa ja testasin tätä ajamalla tilan uudestaan sekä onnistuneesti muokkaamalla tiedostoa. (Update 28.4. HUOM! tiedostolle ei tulisi ikinä antaa 777 oikeuksia, koska tämä on suuri tietoturvariski. Tämä antaa kaikille käyttäjille mahdollisuuden muokata kyseistä tiedostoa. 755 antaa riittävät oikeudet ja mahdollistaa tiedoston lukemisen ja suorittamisen.)
 
 Kokeilin myös tulosten hakemista herra-koneelta komennolla `sudo salt '*' cmd.run 'cat /usr/games/tulokset.txt'`. Vastauksesi sain muokatun tiedoston, eli  muokattu salt-tila toimi täysin halutulla tavalla.
 ##
