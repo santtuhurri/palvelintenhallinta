@@ -1,6 +1,6 @@
 # Palvelinten hallinta - Harjoitus 3
 
-Tämän tehtävän harjoitukset on tehty samalla kokoonpanolla kuin aiemmissakin [harjoituksissa.](https://hurrisanttu.wordpress.com/) (Update 21.4. tehtävän tekstiä muokattu ja lisätty oikea kuva. Tehtäviin lisätty käytettyjä komentoja, jotka unohtuneet alkuperäisestä tekstistä.)
+Tämän tehtävän harjoitukset on tehty omalla koneellani, johon olen asentanut VirtualBoxin ja siihen Debian 11 Linux -virtuaalikoneen. [(Edelliset harjoitukset)](https://hurrisanttu.wordpress.com/) (Update 21.4. tehtävän tekstiä muokattu ja lisätty oikea kuva. Tehtäviin lisätty käytettyjä komentoja, jotka unohtuneet alkuperäisestä tekstistä.)
 ##
 
 ## z) Lue ja tiivistä artikkeli muutamalla ranskalaisella viivalla. Tässä z-alakohdassa ei tarvitse siis tehdä testejä tietokoneella.
