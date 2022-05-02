@@ -17,14 +17,14 @@ heimaailma:
 #!/bin/bash
 
 echo ""
-echo "Heippa!"
-whoami
+name=$(whoami)
+echo "Heippa $name!""
 echo ""
-echo "Tänään on"
-date "+%A %d. %Bta klo %T"
+today=$(date "+%A %d. %Bta klo %T")
+echo "Tänään on $today."
 echo ""
-echo "IP-osoitteesi on:"
-hostname -i
+ipaddress=$(hostname -i)
+echo "IP-osoitteesi on $ipaddress."
 echo ""
 curl fi.wttr.in/Helsinki?0
 ```
