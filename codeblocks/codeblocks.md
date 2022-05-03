@@ -43,3 +43,11 @@ hello:
     - source: salt://python/hello.py
     - mode: 755
 ```
+##
+```
+/usr/local/bin/:
+  file.recurse:
+    - source: salt://skriptit/
+    - file_mode: 755
+    - dir_mode: 755
+```
