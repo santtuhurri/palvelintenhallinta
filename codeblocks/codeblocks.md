@@ -18,7 +18,7 @@ heimaailma:
 
 echo ""
 name=$(whoami)
-echo "Heippa $name!""
+echo "Heippa $name!"
 echo ""
 today=$(date "+%A %d. %Bta klo %T")
 echo "Tänään on $today."
