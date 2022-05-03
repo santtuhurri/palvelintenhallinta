@@ -27,3 +27,19 @@ echo "IP-osoitteesi on $ipaddress."
 echo ""
 curl fi.wttr.in/Helsinki?0
 ```
+##
+```
+whatsup:
+  file.managed:
+    - name: /usr/local/bin/whatsup.sh
+    - source: salt://whatsup/whatsup.sh
+    - mode: 755
+```
+##
+```
+hello:
+  file.managed:
+    - name: /usr/local/bin/hello.py
+    - source: salt://python/hello.py
+    - mode: 755
+```
