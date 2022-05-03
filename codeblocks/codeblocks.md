@@ -51,3 +51,9 @@ hello:
     - file_mode: 755
     - dir_mode: 755
 ```
+##
+```
+#!/usr/bin/python3
+
+print("Hei Santtu!")
+```
