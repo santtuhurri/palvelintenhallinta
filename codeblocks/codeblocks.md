@@ -11,3 +11,19 @@ heimaailma:
     - source: salt://heimaailma/heimaailma.sh
     - mode: 755
 ```
+##
+```
+#!/bin/bash
+
+echo ""
+name=$(whoami)
+echo "Heippa $name!"
+echo ""
+today=$(date "+%A %d. %Bta klo %T")
+echo "Tänään on $today."
+echo ""
+ipaddress=$(hostname -i)
+echo "IP-osoitteesi on $ipaddress."
+echo ""
+curl fi.wttr.in/Helsinki?0
+```
