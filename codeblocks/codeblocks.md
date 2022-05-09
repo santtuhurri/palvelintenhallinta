@@ -22,7 +22,7 @@ echo ""
 today=$(date "+%A %d. %Bta klo %T")
 echo "Tänään on $today."
 echo ""
-ipaddress=$(hostname -i)
+ipaddress=$(hostname -I)
 echo "IP-osoitteesi on $ipaddress."
 echo ""
 curl fi.wttr.in/Helsinki?0
