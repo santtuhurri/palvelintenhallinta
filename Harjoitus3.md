@@ -1,6 +1,6 @@
 # Palvelinten hallinta - Harjoitus 3
 
-Tämän tehtävän harjoitukset on tehty omalla koneellani, johon olen asentanut VirtualBoxin ja siihen Debian 11 Linux -virtuaalikoneen. [(Edelliset harjoitukset)](https://hurrisanttu.wordpress.com/) (Update 21.4. tehtävän tekstiä muokattu ja lisätty oikea kuva. Tehtäviin lisätty käytettyjä komentoja, jotka unohtuneet alkuperäisestä tekstistä.)
+Tämän tehtävän harjoitukset on tehty omalla koneellani, johon olen asentanut VirtualBoxin ja siihen Debian 11 Linux -virtuaalikoneen. [(Edelliset harjoitukset)](https://hurrisanttu.wordpress.com/) (Update 21.4. tehtävän tekstiä muokattu ja lisätty oikea kuva. Tehtäviin lisätty käytettyjä komentoja, jotka unohtuneet alkuperäisestä tekstistä.) (Update 17.5. lisätty puuttuvat lähteet.)
 ##
 
 ## z) Lue ja tiivistä artikkeli muutamalla ranskalaisella viivalla. Tässä z-alakohdassa ei tarvitse siis tehdä testejä tietokoneella.
@@ -31,7 +31,7 @@ Tämän tehtävän harjoitukset on tehty omalla koneellani, johon olen asentanut
 
 ## a) MarkDown. Tee tämän tehtävän raportti MarkDownina. Helpointa on tehdä raportti GitHub-varastoon, jolloin md-päätteiset tiedostot muotoillaan automaattisesti. Tyhjä rivi tekee kappalejaon, risuaita ‘#’ tekee otsikon, sisennys merkitsee koodinpätkän.
 
-Tämän tehtävän raportti löytyy GitHubista: [Palvelinten hallinta - Harjoitus 3](https://github.com/santtuhurri/palvelintenhallinta/blob/main/Harjoitus3.md)
+Tästä näet tehtävän MarkDown tekstinä: [Palvelinten hallinta - Harjoitus 3](https://raw.githubusercontent.com/santtuhurri/palvelintenhallinta/main/Harjoitus3.md)
 ##
 
 ## b) Pull first. Tee useita muutoksia git-varastoosi. Tee muutama muutos, jossa yksi commit koskee useampaa tiedostoa. Anna hyvä kuvaukset (commit message), yksi englanninkielinen lause imperatiivissa (määräysmuodossa) "Add top level menu to Foobar synchronizer"
@@ -127,6 +127,10 @@ Kokeilin myös tulosten hakemista herra-koneelta komennolla `sudo salt '*' cmd.r
 
 Atlassian.com. Git Status: Inspecting a repository. [https://www.atlassian.com/git/tutorials/inspecting-a-repository](https://www.atlassian.com/git/tutorials/inspecting-a-repository)
 
+CommonMark. Help. [https://commonmark.org/help/](https://commonmark.org/help/)
+
 GitHub.com. can file.directory recurse chmod? (updated) #3471. [https://github.com/saltstack/salt/issues/3471](https://github.com/saltstack/salt/issues/3471)
 
 Karvinen, Tero. Oppitunnit 2022-04-14, Configuration management systems 2022. [https://terokarvinen.com/2021/configuration-management-systems-2022-spring/](https://terokarvinen.com/2021/configuration-management-systems-2022-spring/)
+
+Stack Overflow. How do I display local image in markdown? [https://stackoverflow.com/questions/41604263/how-do-i-display-local-image-in-markdown](https://stackoverflow.com/questions/41604263/how-do-i-display-local-image-in-markdown)
